@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #54c3ef;
+}
+
+#main-heading {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 90px;
+    text-align: center;
+    color: #fff748;
+    text-shadow: 2px 5px #2b3252;
+    margin: 0;
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    padding: 4% 8%;
+    box-sizing: border-box;
+}
+
+#back-to-homepage {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: #fff748;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#form-container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 40%;
+    background-color: #2b3252;
+    border-radius: 10px;
+}
+
+.FormContainer{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+}
+
+.FormGroup{
+    margin: 1em;
+    padding: 0.5em;
+    position: relative;
+    box-sizing: border-box;
+}
+
+legend{
+    color: #fff;
+    font-size: 20px;
+}
+
+#SecondLegend{
+    text-align: center;
+}
+
+#ThirdLegend{
+    text-align: right;
+}
+
+.FormGroup > label{
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.FormGroup > input{
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.FormGroup > select{
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+}
+
+.FormGroup > textarea{
+    resize: none;
+    width: 100%;
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.FormGroupButtons{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#StepOneContainer > .FormGroupButtons{
+    justify-content: flex-end;
+}
+
+button{
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #2b3252;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff748;
+    border: 0;
+}
+
+button:active{
+    background: #fff;
+    color: #000;
+}
+
+#StepOneContainer{
+    display: block;
+}
+#StepTwoContainer, #StepThreeContainer{
+    display: none;
+}
+
+.ErrorText{
+    color: #ff4949;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    margin: 0px;
+    margin-top: 4px;
+    display: none;
+}
+
+#SuccessContainer{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #2b3252;
+    color: #fff748;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#SuccessContainer h3{
+    font-size: 1.3em;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    text-align: center;
+}

@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-color: #78909c; */
+    background-color: #54c3ef;
+}
+
+#main-heading {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 90px;
+    text-align: center;
+    color: #fff748;
+    text-shadow: 2px 5px #2b3252;
+    margin: 0;
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    padding: 4% 8%;
+    box-sizing: border-box;
+}
+
+#card-wrapper {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 50%;
+    height: 300px;
+    border-radius: 8px;
+    margin: 16px;
+    text-align: center;
+    background-color: #2b3252;
+    padding: 24px;
+}
+
+.left-card {
+    background-color: #fff748;
+    color: #2b3252;
+    position: relative;
+}
+
+.left-card h3 {
+    color: #2b3252;
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.left-card > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-card > div > img {
+    width: 100px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.next-step {
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.previous-step {
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+}
+
+#select-eyes-card h3 {
+    margin-bottom: 16px;
+}
+
+#select-eyes-card img {
+    width: 70px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+#select-mouth-card h3 {
+    margin-bottom: 16px;
+}
+
+#select-mouth-card img {
+    width: 70px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.right-card {
+    background-color: #2b3252;
+    color: #fff748;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#emoji {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+#skin {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#eyes {
+    width: 100%;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+#mouth {
+    width: 100%;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+#back-to-homepage {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: #fff748;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#select-skin-card {
+    display: block;
+}
+
+#select-eyes-card {
+    display: none;
+}
+
+#select-mouth-card {
+    display: none;
+}

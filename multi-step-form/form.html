@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+    <title>The Multi-Step Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <main>        
+        <div id="main-container">
+            <a id="back-to-homepage" href="../index.html">Back to Home</a>
+            <h1 id="main-heading">The Multi-Step Form</h1>
+            <div id="form-container">
+                <form method="GET" id="MultiStepForm">
+                    <!-- Step One Form -->
+                    <fieldset class="FormContainer" id="StepOneContainer">
+                        <legend>Step: 1</legend>
+                        <div class="FormGroup">
+                            <label for="first_name">First Name *</label>
+                            <input id="first_name" type="text" placeholder="First Name">
+                            <p class="ErrorText" id="first_name_error">Please enter a valid first name.</p>
+                        </div>
+                        <div class="FormGroup">
+                            <label for="last_name">Last Name</label>
+                            <input id="last_name" type="text" placeholder="Last Name">
+                            <p class="ErrorText" id="last_name_error">Please enter a valid last name</p>
+                        </div>
+                        <div class="FormGroup">
+                            <label for="email">Email *</label>
+                            <input id="email" type="email" placeholder="Email">
+                            <p class="ErrorText" id="email_error">Please enter a valid Email</p>
+                        </div>
+                        <div class="FormGroupButtons">
+                            <button id="StepOneNext">NEXT</button>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Step Two Form -->
+                    <fieldset class="FormContainer" id="StepTwoContainer">
+                        <legend id="SecondLegend">Step: 2</legend>
+                        <div class="FormGroup">
+                            <label for="contact">Contact *</label>
+                            <input id="contact" type="tel" placeholder="Contact">
+                            <p class="ErrorText" id="contact_error">Please enter a valid contact</p>
+                        </div>
+                        <div class="FormGroup">
+                            <label for="city">City</label>
+                            <input id="city" type="text" placeholder="City">
+                            <p class="ErrorText" id="city_error">Please enter a valid City</p>
+                        </div>
+                        <div class="FormGroup">
+                            <label for="country">Country *</label>
+                            <input id="country" type="text" placeholder="Country">
+                            <p class="ErrorText" id="country_error">Please enter a valid Country</p>
+                        </div>
+
+                        <div class="FormGroupButtons">
+                            <button id="StepTwoPrevious">PREVIOUS</button>
+                            <button id="StepTwoNext">NEXT</button>
+                        </div>
+                    </fieldset>
+
+                    <!-- Step Three Form -->
+                    <fieldset class="FormContainer" id="StepThreeContainer">
+                        <legend id="ThirdLegend">Step: 3</legend>
+                        <div class="FormGroup">
+                            <label for="select_program">Enrolled Program *</label>
+                            <select id="select_program">
+                                <option value="">- Select Program -</option>
+                                <option value="React Developer">React Developer</option>
+                                <option value="Angular Developer">Angular Developer</option>
+                                <option value="Python Developer">Python Developer</option>
+                            </select>
+                            <p class="ErrorText" id="select_program_error">Please select a program</p>
+                        </div>
+                        <div class="FormGroup">
+                            <label for="message">Message *</label>
+                            <textarea name="message" id="message" cols="30" rows="5" maxlength="50"></textarea>
+                            <p class="ErrorText" id="message_error">Please enter a message</p>
+                        </div>
+                        <div class="FormGroupButtons">
+                            <button id="StepThreePrevious">PREVIOUS</button>
+                            <button id="StepThreeSubmit">SUBMIT</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <!-- Success Message -->
+                <div id="SuccessContainer">
+                    <h3>Your form has been <br /> submitted successfully!</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
