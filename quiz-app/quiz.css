@@ -20,10 +20,39 @@ body {
     box-sizing: border-box;
 }
 
+#main-div {
+    display: flex;
+    flex-direction: start;
+}
+
+#score-wrapper {
+    width: 100%;
+    height: 300px;
+    max-width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+    margin-top: 32px;
+
+    box-sizing: border-box;
+    padding: 48px 32px;
+    font-size: 28px;
+
+    position: sticky;
+    top: 16px;
+}
+
+#score-wrapper p {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
 #quiz-wrapper {
     width: 100%;
     max-width: 800px;
     margin: 32px auto;
+    margin-right: 16px;
 
     box-sizing: border-box;
     padding: 24px;
@@ -137,4 +166,16 @@ body {
 #result-modal span {
     font-size: 60px;
     font-weight: 800;
+}
+
+.correct-answer {
+    border: 1px solid green;
+    background-color: rgba(0, 255, 0, 0.2);
+    border-radius: 8px;
+}
+
+.incorrect-answer {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
 }
